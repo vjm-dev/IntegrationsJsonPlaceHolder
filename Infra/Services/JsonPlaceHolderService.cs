@@ -12,12 +12,10 @@ namespace IntegrationsJsonPlaceHolder.Infra.Services
     public class JsonPlaceHolderService : IJsonPlaceHolderService
     {
         private readonly HttpClient _httpClient;
-        private readonly int _keyUrl;
 
         public JsonPlaceHolderService(HttpClient httpClient, int keyURL)
         {
             _httpClient = httpClient;
-            _keyUrl = keyURL;
 
             var assembly = Assembly.GetExecutingAssembly();
             var resourceName = Array.Find(
