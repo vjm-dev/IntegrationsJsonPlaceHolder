@@ -12,6 +12,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="IntegrationsJsonPlaceHolder.Tests\**" />
+    <EmbeddedResource Remove="IntegrationsJsonPlaceHolder.Tests\**" />
+    <None Remove="IntegrationsJsonPlaceHolder.Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="appsettings.json" />
   </ItemGroup>
 
